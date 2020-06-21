@@ -73,7 +73,7 @@ body {
     color: rgba(0, 0, 0, 0.5);
     box-shadow: none;
     border-radius: 5px;
-    margin: 5px;
+    margin: 2px;
 }
 .playerButton:focus {
     outline: none;
