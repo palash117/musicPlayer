@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+            integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+            crossorigin="anonymous"
+        />
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="mainContianer">
+            <div class="banner">
+                <div class="bannerMessage">
+                    music player!
+                </div>
+            </div>
+            <audio src="" id="audio"></audio>
+            <div class="contentContiner">
+                <div class="playerControls">
+                    <img
+                        src="./music/art/allthat.jpg"
+                        alt=""
+                        class="musicArt"
+                    />
+                    <div class="playerButtons">
+                        <button
+                            class="playerButton previous fa fa-step-backward fa-2x"
+                        ></button>
+                        <button
+                            class="play playerButton fa fa-play fa-2x"
+                        ></button>
+                        <button
+                            class="next playerButton fa fa-step-forward fa-2x"
+                        ></button>
+                    </div>
+                    <!-- hideProgress -->
+                    <div class="progressContainer hideProgress">
+                        <h5 class="musicName">evolution</h5>
+                        <div class="progressBar">
+                            <div class="progressed"></div>
+                            <div class="pending"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
