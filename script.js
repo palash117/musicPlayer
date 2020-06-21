@@ -51,7 +51,7 @@ var initDomRefferences = () => {
     elPrevious = document.querySelector(".previous");
     elMusicName = document.querySelector(".musicName");
     elMusicProgress = document.querySelector(".progressed");
-    elMusicProgressBar = document.querySelector(".musicName");
+    elMusicProgressBar = document.querySelector(".progressBar");
 };
 
 var setEventListeners = () => {
@@ -118,6 +118,10 @@ var playerNext = () => {
 
 var playerScrub = (event) => {
     console.log(event);
+    let value = `${Math.floor((event.offsetX * 100) / 150)}%`;
+    console.log(((event.offsetX * 100) / 150) * elAudio.duration);
+    elMusicProgress.style.width = value;
+    elAudio.currentTime = (event.offsetX / 150) * elAudio.duration;
 };
 // player hooks
 var updateProgress = () => {

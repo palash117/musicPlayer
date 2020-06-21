@@ -22,7 +22,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    z-index: -200;
+    z-index: 0;
 }
 .banner {
     background-color: var(--t-color);
@@ -36,16 +36,16 @@ body {
     transform: translateY(-200px);
 }
 .playerControls {
-    background-color: var(--t-color);
+    /* background-color: var(--t-color); */
     width: auto;
     height: 100px;
     margin: 20px;
     padding: 10px;
-    border: 2px solid var(--q-color);
-    border-radius: 5px;
     display: flex;
+    z-index: 300;
     align-items: center;
 }
+
 .musicArt {
     width: 150px;
     height: 150px;
@@ -79,7 +79,18 @@ body {
     outline: none;
     background-color: rgba(0, 0, 0, 0.1);
 }
-
+.playerImageAndButtons {
+    background-color: var(--s-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    height: 100px;
+    z-index: 1000;
+    border: 3px solid var(--q-color);
+    border-radius: 5px;
+    padding: 10px;
+}
 .progressContainer {
     position: absolute;
     /* top: 0; */
@@ -90,11 +101,13 @@ body {
     height: 100px;
     transform: translate3d(0, -90%, 0);
     transition: transform 0.5s ease-in;
-    z-index: -1;
+    margin-left: 10px;
+    /* z-index: -100; */
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     padding-left: 150px;
+    /* visibility: hidden; */
 }
 .hideProgress {
     transform: translate3d(0, 0%, 0);
@@ -110,11 +123,11 @@ body {
     width: 150px;
     height: 4px;
     background-color: var(--s-color);
-    cursor: wait;
+    cursor: pointer;
 }
 .progressed {
     width: 100px;
-    height: 100%px;
+    height: 100%;
     background-color: var(--q-color);
 }
 /* hideProgress */
