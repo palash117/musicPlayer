@@ -35,6 +35,10 @@ body {
     border-radius: 5px;
     transform: translateY(-200px);
 }
+.musicCredits {
+    margin-top: 20px;
+    font-size: 70%;
+}
 .playerControls {
     /* background-color: var(--t-color); */
     width: auto;
@@ -133,3 +137,6 @@ body {
     background-color: var(--q-color);
 }
 /* hideProgress */
+.musicCreditMessage {
+    font-size: 50%;
+}
